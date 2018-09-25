@@ -28,7 +28,12 @@ add_action( 'init', function () {
 } );
 
 add_action( 'admin_enqueue_scripts', function () {
-	wp_enqueue_style( 'sws-restaurant-menu-admin', plugins_url( '/../css/sws-restaurant-menu-admin.css', __FILE__ ) );
+	wp_enqueue_style(
+		'sws-restaurant-menu-admin',
+		plugins_url( '/../css/sws-restaurant-menu-admin.css', __FILE__ ),
+		array(),
+		SWS_RESTAURANT_MENU_VERSION
+	);
 
 } );
 

@@ -6,14 +6,14 @@
  * Author URI:      https://www.digitalcanvas.com
  * Text Domain:     sws-restaurant-menu
  * Domain Path:     /languages
- * Version:         0.1.0
+ * Version:         1.0.0
  * GitHub Plugin URI: https://github.com/digital-canvas/sws-restaurant-menu
  *
  * @package         Sws_Restaurant_Menu
  */
 
 if ( ! defined( 'SWS_RESTAURANT_MENU_VERSION' ) ) {
-	define( 'SWS_RESTAURANT_MENU_VERSION', '1.0' );
+	define( 'SWS_RESTAURANT_MENU_VERSION', '1.0.0' );
 }
 
 // Includes
