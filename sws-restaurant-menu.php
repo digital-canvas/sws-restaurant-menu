@@ -7,6 +7,7 @@
  * Text Domain:     sws-restaurant-menu
  * Domain Path:     /languages
  * Version:         0.1.0
+ * GitHub Plugin URI: https://github.com/digital-canvas/sws-restaurant-menu
  *
  * @package         Sws_Restaurant_Menu
  */
