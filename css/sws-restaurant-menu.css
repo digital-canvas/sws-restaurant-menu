@@ -1,0 +1,165 @@
+/*
+ * SWS Restaurant Menu
+ * Uses BEM naming conventions. (http://getbem.com)
+ */
+
+.sws-menu {
+	--section-border: solid 1px #bbb;
+	--item-border: dashed 1px #bbb;
+	--section-space: 50px;
+	--section-header-font-size: 2em;
+	--item-name-font-size: 1.2em;
+	--item-price-font-size: 1.5em;
+	--item-variation-price-font-size: 1.2em;
+	--item-addon-border-top: none;
+}
+
+.sws-menu__content {
+}
+
+.sws-menu__section {
+	margin-bottom: var(--section-space);
+}
+
+h3.sws-menu__section__header {
+	margin: 0 0 20px 0;
+	padding: 0 0 10px 0;
+	border-bottom: var(--section-border);
+	font-size: var(--section-header-font-size);
+}
+
+.sws-menu__section__header__separator {
+	padding: 0;
+	margin: 0;
+}
+
+.sws-menu__section__description {
+}
+
+.sws-menu__section__items {
+	margin-top: 20px;
+}
+
+.sws-menu__item {
+
+	border-bottom: var(--item-border);
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.aws-menu__item--addon {
+}
+
+.sws-menu__item__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.sws-menu__item__content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.sws-menu__item__photo {
+	margin-right: 20px;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.sws-menu__item__photo img {
+	max-width: 100%;
+	height: auto;
+}
+
+.sws-menu__item__details {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.sws-menu__item__name {
+	font-weight: bold;
+	font-size: var(--item-name-font-size);
+}
+
+.sws-menu__item__description {
+	font-style: italic;
+	font-size: 1em;
+}
+
+.sws-menu__item_offer {
+	margin-left: 20px;
+	text-align: right;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.sws-menu__item_offer__price {
+	font-size: var(--item-price-font-size);
+}
+
+.sws-menu__item__addons {
+	display: table;
+	border-collapse: collapse;
+}
+
+.sws-menu__item__addon {
+	display: table-row;
+}
+
+.sws-menu__item__addon__name {
+	display: table-cell;
+	font-style: italic;
+	font-size: 1em;
+	padding-right: 20px;
+	border-top: var(--item-addon-border-top);
+}
+
+.sws-menu__item__addon__offer {
+	display: table-cell;
+	text-align: right;
+	border-top: var(--item-addon-border-top);
+}
+
+.sws-menu__item__addon__offer__price {
+}
+
+.sws-menu__item__variations {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.sws-menu__item__variation {
+	margin-left: 20px;
+}
+
+.sws-menu__item__variation__name {
+	font-weight: bold;
+	text-align: right;
+}
+
+.sws-menu__item__variation__offer {
+	font-size: var(--item-variation-price-font-size);
+}
+
+.sws-menu__item__variation__offer__price {
+}
+
+@media (max-width: 768px) {
+	.sws-menu__item__wrapper {
+		flex-wrap: wrap;
+	}
+
+	.sws-menu__item__photo {
+		width: 100%;
+
+	}
+}
